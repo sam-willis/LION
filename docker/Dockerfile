@@ -32,7 +32,7 @@ RUN python -m pip install nestargs
 RUN python -m pip install flatten_dict
 #RUN python -m pip uninstall point_cloud_utils
 #RUN python -m pip install git+https://github.com/fwilliams/point-cloud-utils.git
-RUN conda install -y scikit-image
+RUN conda install -y scikit-image==0.19.1
 RUN apt-get update
 #RUN python -m pip uninstall torch-scatter
 RUN export PATH=/usr/local/cuda-11.1/bin:$PATH
